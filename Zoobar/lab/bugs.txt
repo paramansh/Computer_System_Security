@@ -1,0 +1,30 @@
+#
+# [file:#lines]
+# desc
+#
+
+[zookd.c:1234]
+description goes here. for example, the 'buf' variable can be
+overwritten by the 'msg' variable because ...
+
+    <paste offending line(s) of code here>
+
+[http.c:1234]
+another description.
+
+    <paste offending line(s) of code here>
+
+# many more come here
+
+[http.c:65]
+A larger size buffer than 4096 can be read
+[http.c:87]
+?? Can overflow? as buffer variable itself can overflow 
+
+strcpy??? 
+
+274 strcat??
+
+in zookd reqpath is 2048 but buff can be larger than that
+
+length > 1024 also buffer overflow? because no response returned

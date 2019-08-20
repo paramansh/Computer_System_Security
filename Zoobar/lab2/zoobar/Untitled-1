@@ -1,0 +1,3 @@
+Explicitly chdir into the jail
+The chroot call itself does not change the working directory, so if the new root is below the current directory, the application can still have access outside resources.
+The application should explicitly change to a directory within the jail before running chroot:
